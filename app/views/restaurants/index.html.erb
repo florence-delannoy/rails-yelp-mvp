@@ -1,2 +1,26 @@
-<h1>Restaurants#index</h1>
-<p>Find me in app/views/restaurants/index.html.erb</p>
+<div class="wrapper">
+		<h1>Nos restaurants</h1> 
+		<div class=""> <%= link_to "Add a restaurant", new_restaurant_path, class: "btn btn-danger" 	%> </div>
+
+	<div class=container>
+
+	
+	<div>
+		<div class="restaurants">
+			<% @restaurants.each do |restaurant| %>
+			<div class="restaurant">
+				<div class="restaurant-body">
+					<p> <strong> <%= restaurant.name %> </strong> </p>
+					<p> <%= restaurant.address %> </p>
+					<p> <%= restaurant.category %> </p>
+				</div>
+				<div class="restaurant-details">
+					<%= link_to "more details", restaurant_path(restaurant.id), class: "btn" %>
+				</div>
+			</div>
+			<% end %>
+		</div>
+	</div>
+
+</div>
+</div>

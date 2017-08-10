@@ -1,6 +1,21 @@
-// Place all the styles related to the restaurants controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.wrapper{
+	background-color: white;
+}
+.container{
+	height: 90vh;
+	width: 80vw;
+	background-color: #FAFAFA;
+}
+
+.wrapper h1{
+	font-size: 35px;
+	padding: 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+.btn {
+	font-size: 16px;
+}
 
 .restaurant {
   display: flex;
